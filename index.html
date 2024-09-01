@@ -4,18 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <title>Modern Art</title>
+
+    <!-- Externally linked styles sheets  -->
+    <!-- Font Awesome Icons style sheet  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Montesserat Font styles sheet -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    
+
+    <title>Artsy</title>
     
 </head>
 <body>
     <main>
-        <h1>Modern Art</h1>
-        <div class="container">
-            <div id="box1" class="box">Box 1</div>
-            <div id="box2" class="box">Box 2</div>
-            <div id="box3" class="box">Box 3</div>
-          </div>
+        <button  id="myBtn" title="Scroll to top"><i class="fa fa-paint-brush"></i></button>
+        <!-- i tags are used by font awesome to incorporate icons inline -->
+        
+        <header>
+            
+
+            <h1 id="title"><i class="fa fa-paint-brush"></i>ARTSY</h1>
+            <nav class="navbar">
+                <a class="navlinks" href="">Home</a>
+                <a class="navlinks" href="">About</a>
+                <a class="navlinks" href="">Tickets</a>
+                <a class="navlinks" href="">Galleries</a>
+                <a class="navlinks" href="">Pricing</a>
+            </nav>
+            <embed id="introtunes" name="MickeyWhistle" src="/Media/mickey-mouse-steamboat-willie-whistle.mp3" loop="false" hidden="true" autostart="true">
+            <!-- Autoplays intro tunes when the site is opened -->
+        </header>
+
+        <section class="background" id ="img1">
+            <div class ="info" id="infobox1">
+                <h2 class="tagline">Recent Launch</h2>
+                <h1 class="headline">OIL PAINTING DEMO</h1>
+                <a class="more" href="">Read More</a>
+            </div>
+        </section>
+
+        <section class="background" id="img2">
+            <div class ="info" id="infobox2">
+                <h2 class="tagline">Buy Tickets</h2>
+                <h1 class="headline">YOU CAN VISIT US!</h1>
+                <a  class="more" href="">Read More</a>
+            </div>
+        </section>
+        <section class="background" id="img3">
+            <div class ="info" id="infobox3">
+                <h2 class="tagline">Pyropgraphy Workshops</h2>
+                <h1 class="headline">EXPLORE DIFFERENT FORMS OF ART</h1>
+                <a class="more" id="more3" href="">Read More</a>
+            </div>
+        </section>
+        <footer>
+            <p>Hanifah SoftwareDevs14 &copy; 2024</p>
+            <div class="socials">
+                <a class="socialicons" href=""><i class="fa fa-facebook"></i></a>
+                <a class="socialicons" href=""><i class="fa fa-instagram"></i></a>
+                <a class="socialicons" href=""><i class="fa fa-twitter"></i></a>
+            </div>
+            
+            
+
+        </footer>    
            
     </main>
+    <!--Linking Javascript file-->
+    <script src="script.js"></script>
+    
+
 </body>
 </html>

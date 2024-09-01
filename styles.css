@@ -1,26 +1,162 @@
-h1{
-    font-size: 50px;
-    text-align: center;
-    font-weight: 500;
-    color: darkgreen;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body, h1, h2{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
 }
- .container{
-    display: flex; 
+#title{
+    font-size: 50px;
+    color:#ff33b9;
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 4px;
+}
+header{
+    position: fixed;
+    color:  white;
+    display: flex;
+    padding: 40px 50px;
+    gap:100px;
+    z-index: 10;
+}
+
+/* Scroll to top features */
+html{
+    scroll-behavior: smooth;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 25px;
+    background-image: none;
+}
+
+#myBtn:hover{
+    background-color: white;
+    color: #ff33b9;
+}
+
+
+/* Main Body of Page */
+#img1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Media/art1.jpg);
+    /* opacity: 60%; */
+}
+#img2{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Media/art3.jpg);
+    
+}
+#img3{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Media/art2.jpg);
+}
+.background{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+    text-transform: uppercase;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    color:white;
+    text-shadow: 2px 2px 2px #ff33b9;
+}
+nav a:hover{
+    background-color: white;
+    color:#ff33b9;
+    border-radius: 15px;
+    padding: 10px;
+    text-shadow:none;
+    
+}
+.info{
+    position: absolute;
+    bottom: 200px;
+    left: 3rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    z-index:1;
+    /* specifies the gap between eleements in flexbox */
+    
+}
+#infobox3{
+    color:white;
+}
+#more3{
+    color:white;
+    border: 3px solid white;
+}
+.more{
+    margin-top: 20px;
+    display: inline-block; 
+    max-width: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 1;
+    color: black;
+    border: 3px solid black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    
+}
+
+.more:hover,#more3:hover{
+    background-color: white;
+    color: #ff33b9;
+    border:transparent;
+   
+}
+footer{
+    background-color: #ff33b9;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding: 25px;
+}
+.socials{
+    display:flex;
     flex-direction: row;
     justify-content: center;
-    
+    gap:10px;
+    font-size: 20px;
+    color:white;
+}
+.socialicons{
+    color:white;
+}
+.socialicons:hover{
+    color:black;
 
 }
-.box{
-    height:100px;
-    width:100px;
-    background-color: black;
-    border: 15px pink solid;
-    padding: 25px;
-    margin:20px;
-    color:white;
-    text-align: center;
-    
-    
-} 
+#introtunes{
+    width: 100px;
+    height:30px;
+}
