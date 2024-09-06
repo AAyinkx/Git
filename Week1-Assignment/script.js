@@ -15,9 +15,8 @@ function scrollFunction() {
   }
 }
 
-mybutton.addEventListener("click", topFunction);
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.documentElement.scrollTop = 0; //If the 'scroll to top' button is clicked the scrollTop value is set to 0 so the user will taken to the top
 }
+mybutton.addEventListener("click", topFunction);
